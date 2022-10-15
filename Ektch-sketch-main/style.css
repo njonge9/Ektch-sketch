@@ -1,0 +1,37 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+canvas {
+  border: 30px solid orangered;
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+  background: white;
+}
+
+canvas.shake {
+  animation: shake 0.5s linear 1;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
